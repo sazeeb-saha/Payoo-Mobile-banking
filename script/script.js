@@ -5,7 +5,7 @@ document.getElementById("login-btn").addEventListener("click", function () {
   const pin = inputPin.value;
   if (mobileNumber == "01637847676" && pin == "1234") {
     alert("login successful");
-    window.location.assign("/home.html");
+    window.location.assign("./home.html");
   } else {
     alert("login failed");
     return;
