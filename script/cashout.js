@@ -6,6 +6,10 @@ document.getElementById("cashout-btn").addEventListener("click", function () {
   }
 
   const cashOutAmount = getValueFromInput("cashout-amount");
+  if (cashOutAmount <= "0" || cashOutAmount === "") {
+    alert("Invalid Amount");
+    return;
+  }
 
   const currentBalance = getBalance();
 
@@ -18,7 +22,9 @@ document.getElementById("cashout-btn").addEventListener("click", function () {
 
   const cashOutPin = getValueFromInput("cashout-pin");
   if (cashOutPin === "1234") {
-    alert("Cash-Out Successful");
+    alert(
+      `Cash Out TK- ${cashOutAmount} Successfully to ${agentNumber} at ${new Date()}`,
+    );
     setBalance(newBalance);
   } else {
     alert("Invalid Pin. Try Again!");

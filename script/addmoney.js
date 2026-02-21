@@ -12,6 +12,10 @@ document.getElementById("addmoney-btn").addEventListener("click", function () {
   }
 
   const addMoneyAmount = getValueFromInput("addmoney-amount");
+  if (addMoneyAmount <= "0" || addMoneyAmount == "") {
+    alert("Invalid Amount");
+    return;
+  }
   const amount = getBalance();
   const newBalance = amount + Number(addMoneyAmount);
 
