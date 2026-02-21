@@ -79,7 +79,10 @@
           <img src="./assets/opt-2.png" alt="Cash Out logo" />
           <h2>Cash Out</h2>
         </div>
-        <div class="btn flex-col h-full py-4 btn-primary btn-soft">
+        <div
+          onclick="showOnly('transfer-money')"
+          class="btn flex-col h-full py-4 btn-primary btn-soft"
+        >
           <img src="./assets/opt-3.png" alt="Transfer Money logo" />
           <h2>Transfer Money</h2>
         </div>
@@ -196,7 +199,7 @@
 
     <!-- Transfer Money Section -->
 
-    <section id="transfer-money" class="w-11/12 mx-auto">
+    <section id="transfer-money" class="w-11/12 mx-auto hidden">
       <h2 class="text-2xl font-bold">Transfer Money</h2>
       <div class="card bg-base-100 w-full rounded-xl mx-auto mt-[34px]">
         <div class="card-body">
