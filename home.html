@@ -193,8 +193,53 @@
         </div>
       </div>
     </section>
+
+    <!-- Transfer Money Section -->
+
+    <section id="transfer-money" class="w-11/12 mx-auto">
+      <h2 class="text-2xl font-bold">Transfer Money</h2>
+      <div class="card bg-base-100 w-full rounded-xl mx-auto mt-[34px]">
+        <div class="card-body">
+          <fieldset class="fieldset">
+            <label class="label text-neutral font-bold mb-3"
+              >User Account Number
+            </label>
+            <input
+              id="transfer-money-number"
+              type="text"
+              maxlength="11"
+              class="input bg-base-200 rounded-full border-0 mb-5 w-full"
+              placeholder="Enter User Number"
+            />
+            <label class="label text-neutral font-bold mb-3">Amount </label>
+            <input
+              id="transfer-money-amount"
+              type="number"
+              class="input bg-base-200 rounded-full border-0 mb-5 w-full"
+              placeholder="Enter Amount"
+            />
+            <label class="label text-neutral font-bold mb-3">Pin Number</label>
+            <input
+              id="transfer-money-pin"
+              maxlength="4"
+              type="password"
+              class="input bg-base-200 rounded-full border-0 mb-5 w-full"
+              placeholder="Enter 4 Digit Pin"
+            />
+            <button
+              id="transfer-money-btn"
+              class="btn btn-primary rounded-full mt-4"
+            >
+              Transfer Money
+            </button>
+          </fieldset>
+        </div>
+      </div>
+    </section>
+
     <script src="./script/machine.js"></script>
     <script src="./script/addmoney.js"></script>
+    <script src="./script/transfermoney.js"></script>
     <script src="./script/cashout.js"></script>
   </body>
 </html>
